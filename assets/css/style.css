@@ -29,21 +29,28 @@ body {
 /* If the screen size is 600px wide or less, set the font-size of <div> to 25px */
 @media only screen and (max-device-width: 600px) {
   .banner-content h1 {
-    font-size: 45px;
+    font-size: 55px;
     font-family: 'Raleway', sans-serif;
     color: white;
     font-weight: lighter;
+  }
+
+  a {
+    height: 50px;
+    width: 400px;
+    text-decoration: none;
+    text-align: center;
   }
 }
 
 @import url("//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
 
 .search-input {
-
   margin-bottom: 37px;
   right: 50%;
   bottom: 100px;
   align-self: center !important;
+  text-align: center;
 }
 
 .search {

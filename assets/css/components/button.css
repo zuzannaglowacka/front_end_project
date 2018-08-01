@@ -1,3 +1,11 @@
+@media only screen and (max-device-width: 600px) {
+  .btn-search {
+    max-width: 75%;
+    text-align: center;
+    background-position: center;
+  }
+}
+
 .btn-search {
   text-decoration: none;
   background-color: #f12b6b;
