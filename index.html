@@ -13,53 +13,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400" rel="stylesheet">
 
-    <style>
-
-      body {
-        margin: 0;
-      }
-
-      .banner {
-      height: 100vh;
-      background-size: cover;
-      display: flex;
-      align-items: center;
-      text-align: center;
-    }
-
-      .banner-content {
-        margin: 0 auto;
-      }
-
-      .banner-content h1 {
-        font-family: 'Raleway', sans-serif;
-        color: white;
-        font-weight: lighter;
-        font-size: 50px;
-        text-align: center;
-      }
-
-      /* If the screen size is 600px wide or less, set the font-size of <div> to 25px */
-      @media only screen and (max-device-width: 600px) {
-        .banner-content h1 {
-          font-size: 45px;
-          font-family: 'Raleway', sans-serif;
-          color: white;
-          font-weight: lighter;
-        }
-      }
-
-      .arrow {
-        position: relative;
-        right: 50%;
-        bottom: 12px;
-        align-self: flex-end !important;
-        text-align: center;
-        color: #eb5633;
-        font-size: 40px;
-      }
-
-    </style>
+    <link rel="stylesheet" href="assets/css/style.css">
 
   </head>
 
@@ -68,6 +22,13 @@
       <div class="banner-content">
         <h1>Zuzanna's Architecture</h1>
       </div>
+      <div class="search-input">
+        <div class="search">
+          <span class="fa fa-search"></span>
+          <input placeholder="Search term">
+        </div>
+      </div>
+      <a href="#" class="btn-search">Your call</a>
       <a href="#" class="arrow"><i class="fas fa-long-arrow-alt-down"></i></a>
     </div>
   </body>

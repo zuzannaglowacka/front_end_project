@@ -1,0 +1,80 @@
+@import url("components/button.css");
+
+body {
+  margin: 0;
+}
+
+.banner {
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner-content {
+  margin: 0 auto;
+}
+
+.banner-content h1 {
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  font-weight: lighter;
+  font-size: 50px;
+  text-align: center;
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 25px */
+@media only screen and (max-device-width: 600px) {
+  .banner-content h1 {
+    font-size: 45px;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-weight: lighter;
+  }
+}
+
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+
+.search-input {
+  margin: 0 auto
+  /*position: fixed;*/
+  right: 50%;
+  bottom: 100px;
+  align-self: center !important;
+}
+
+.search {
+  position: relative;
+  color: #aaa;
+  font-size: 16px;
+}
+
+.search input {
+  width: 250px;
+  height: 32px;
+
+  background: #fcfcfc;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  box-shadow: 0 0 3px #ccc, 0 10px 15px #ebebeb inset;
+}
+
+.search input { text-indent: 32px;}
+.search .fa-search {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.arrow {
+  position: fixed;
+  right: 50%;
+  bottom: 12px;
+  align-self: flex-end !important;
+  text-align: center;
+  color: #eb5633;
+  font-size: 40px;
+}
