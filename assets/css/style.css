@@ -39,8 +39,8 @@ body {
 @import url("//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
 
 .search-input {
-  margin: 0 auto
-  /*position: fixed;*/
+
+  margin-bottom: 37px;
   right: 50%;
   bottom: 100px;
   align-self: center !important;
@@ -52,20 +52,24 @@ body {
   font-size: 16px;
 }
 
+a {
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+}
+
 .search input {
   width: 250px;
   height: 32px;
-
   background: #fcfcfc;
   border: 1px solid #aaa;
   border-radius: 5px;
-  box-shadow: 0 0 3px #ccc, 0 10px 15px #ebebeb inset;
+  box-shadow: 3 3 3px #f12b6b,
 }
 
 .search input { text-indent: 32px;}
 .search .fa-search {
   position: absolute;
-  top: 10px;
+  top: 9px;
   left: 10px;
 }
 
@@ -75,6 +79,6 @@ body {
   bottom: 12px;
   align-self: flex-end !important;
   text-align: center;
-  color: #eb5633;
-  font-size: 40px;
+  color: #f12b6b;
+  font-size: 45px;
 }
