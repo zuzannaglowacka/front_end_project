@@ -79,17 +79,17 @@ body {
 
   .search input {
     width: 580px;
-    height: 60px;
+    height: 75px;
     font-size: 30px;
     /*margin-bottom: 40;*/
     }
 
-  .search input { text-indent: 52px;}
+  .search input { text-indent: 55px;}
   .search .fa-search {
     position: absolute;
-    top: 17px;
-    left: 12px;
-    font-size: 29px;
+    top: 24px;
+    left: 14px;
+    font-size: 31px;
   }
 
   .arrow {

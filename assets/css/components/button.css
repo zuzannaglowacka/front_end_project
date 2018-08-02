@@ -5,9 +5,14 @@
 .btn-search {
   text-decoration: none;
   background-color: #f12b6b;
-  padding: 10px 20px;
+  padding: 8px 20px;
   color: white;
   border-radius: 5px;
+}
+
+a.btn-search {
+  width: 120px;
+  height: 36px;
 }
 
 .btn-search:hover {
@@ -24,10 +29,15 @@
     padding-top: 42px;
   }
 
+  a.btn-search {
+    width: 200px;
+    height: 75px;
+    padding: 27px 130px;
+  }
+
   .pink-button a {
-    width: 180px;
-    height: 70px;
-    padding: 25px 35px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 32px;
   }
 }
 
