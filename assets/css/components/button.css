@@ -7,7 +7,7 @@
   background-color: #f12b6b;
   padding: 8px 20px;
   color: white;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
 a.btn-search {
@@ -29,15 +29,18 @@ a.btn-search {
     padding-top: 42px;
   }
 
+  .btn-search {
+    border-radius: 3px;
+  }
+
   a.btn-search {
-    width: 200px;
-    height: 75px;
-    padding: 27px 130px;
+/*    width: 200px;
+    height: 79px;*/
+    padding: 18px 130px;
   }
 
   .pink-button a {
     font-family: 'Raleway', sans-serif;
-    font-size: 32px;
+    font-size: 40px;
   }
 }
-
