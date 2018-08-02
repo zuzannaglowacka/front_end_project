@@ -1,9 +1,5 @@
-@media only screen and (max-device-width: 600px) {
-  .btn-search {
-    max-width: 75%;
-    text-align: center;
-    background-position: center;
-  }
+.pink-button {
+  align-self: center !important;
 }
 
 .btn-search {
@@ -17,3 +13,21 @@
 .btn-search:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
+
+.pink-button a {
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+}
+
+@media only screen and (max-device-width: 600px) {
+  .pink-button {
+    padding-top: 42px;
+  }
+
+  .pink-button a {
+    width: 180px;
+    height: 70px;
+    padding: 25px 35px;
+  }
+}
+

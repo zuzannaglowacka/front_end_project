@@ -26,29 +26,11 @@ body {
   text-align: center;
 }
 
-/* If the screen size is 600px wide or less, set the font-size of <div> to 25px */
-@media only screen and (max-device-width: 600px) {
-  .banner-content h1 {
-    font-size: 55px;
-    font-family: 'Raleway', sans-serif;
-    color: white;
-    font-weight: lighter;
-  }
-
-  a {
-    height: 50px;
-    width: 400px;
-    text-decoration: none;
-    text-align: center;
-  }
-}
 
 @import url("//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
 
 .search-input {
-  margin-bottom: 37px;
-  right: 50%;
-  bottom: 100px;
+  margin-bottom: 38px;
   align-self: center !important;
   text-align: center;
 }
@@ -59,18 +41,14 @@ body {
   font-size: 16px;
 }
 
-a {
-  font-family: 'Raleway', sans-serif;
-  font-size: 15px;
-}
-
 .search input {
   width: 250px;
   height: 32px;
   background: #fcfcfc;
   border: 1px solid #aaa;
   border-radius: 5px;
-  box-shadow: 3 3 3px #f12b6b,
+  box-shadow: 3 3 3px #f12b6b;
+  font-size: 15px;
 }
 
 .search input { text-indent: 32px;}
@@ -82,10 +60,41 @@ a {
 
 .arrow {
   position: absolute;
-  right: 50%;
+  right: 49%;
   bottom: 12px;
   align-self: flex-end !important;
   text-align: center;
   color: #f12b6b;
   font-size: 45px;
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 25px */
+@media only screen and (max-device-width: 600px) {
+  .banner-content h1 {
+    font-size: 65px;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-weight: lighter;
+  }
+
+  .search input {
+    width: 580px;
+    height: 60px;
+    font-size: 30px;
+    /*margin-bottom: 40;*/
+    }
+
+  .search input { text-indent: 52px;}
+  .search .fa-search {
+    position: absolute;
+    top: 17px;
+    left: 12px;
+    font-size: 29px;
+  }
+
+  .arrow {
+    font-size: 90px;
+
+  }
+
 }
