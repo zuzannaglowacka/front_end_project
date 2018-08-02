@@ -81,7 +81,7 @@ a {
 }
 
 .arrow {
-  position: fixed;
+  position: absolute;
   right: 50%;
   bottom: 12px;
   align-self: flex-end !important;
