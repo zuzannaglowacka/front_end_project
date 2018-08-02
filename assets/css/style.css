@@ -78,6 +78,7 @@ body {
   }
 
   .search input {
+    margin-top: 68px;
     width: 600px;
     height: 75px;
     font-size: 30px;
@@ -87,14 +88,13 @@ body {
   .search input { text-indent: 55px;}
   .search .fa-search {
     position: absolute;
-    top: 24px;
+    top: 91px;
     left: 14px;
     font-size: 31px;
   }
 
   .arrow {
     font-size: 98px;
-
   }
 
 }
