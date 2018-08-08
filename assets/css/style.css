@@ -98,3 +98,24 @@ body {
   }
 
 }
+
+.flex-thirds {
+  display: flex;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.flex-thirds body {
+  padding: 20px;
+}
+.flex-grid {
+  margin: 0 0 20px 0;
+}
+.col {
+  background: #bbbdbf;
+  padding: 20px;
+}
