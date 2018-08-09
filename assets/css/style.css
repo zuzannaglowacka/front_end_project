@@ -96,6 +96,10 @@ body {
   .arrow {
     font-size: 98px;
   }
+
+  .banner {
+    margin-bottom: 35px;
+  }
 }
 
 .flex-thirds {
@@ -107,15 +111,12 @@ body {
 
 .flex-thirds .col {
   width: 32%;
+  background: #f6f6f6;
+  padding: 20px;
 }
 
 * {
   box-sizing: border-box;
-}
-
-.col {
-  background: #f6f6f6;
-  padding: 20px;
 }
 
 .col header {
@@ -131,6 +132,23 @@ body {
   font-size: 16px;
   text-align: justify;
   line-height: 1.5;
+}
+
+@media only screen and (max-device-width: 400px) {
+  .flex-thirds {
+    display: block;
+    margin: 0;
+    width: 100%;
+  }
+
+  .flex-thirds .col {
+    width: 100%;
+    padding: 20px 50px 10px 50px;
+  }
+
+  .col header {
+    padding-top: 20px;
+  }
 }
 
 
