@@ -98,8 +98,28 @@
   }
 }
 
+@media only screen and (max-device-width: 1024px) {
+  .second-cta {
+    padding-top: 42px;
+  }
 
+  .second-cta .btn-search {
+    border-radius: 3px;
+  }
 
+  .second-cta a.btn-search {
+    padding: 24px 83px;
+  }
 
+  .second-cta a {
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+  }
 
+  .second-cta a.btn-search {
+    width: 455px;
+    height: 104px;
+    margin-bottom: 40px;
+  }
+}
 

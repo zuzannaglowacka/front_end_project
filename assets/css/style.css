@@ -151,7 +151,23 @@ body {
   }
 }
 
+@media only screen and (max-device-width: 1024px) {
+  .flex-thirds {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    width: 100%;
+  }
 
+  .flex-thirds .col {
+    flex-basis: 48%;
+    margin: 0px 10px 30px 10px;
+  }
+
+  .banner {
+    margin-bottom: 30px;
+  }
+}
 
 
 
