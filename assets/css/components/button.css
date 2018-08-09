@@ -10,11 +10,6 @@
   border-radius: 3px;
 }
 
-a.btn-search {
-  width: 120px;
-  height: 36px;
-}
-
 .btn-search:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
@@ -23,6 +18,7 @@ a.btn-search {
   font-family: 'Raleway', sans-serif;
   font-size: 15px;
 }
+
 
 @media only screen and (max-device-width: 600px) {
   .pink-button {
@@ -34,7 +30,7 @@ a.btn-search {
   }
 
   a.btn-search {
-/*    width: 200px;
+/*  width: 200px;
     height: 79px;*/
     padding: 18px 130px;
   }
@@ -44,3 +40,66 @@ a.btn-search {
     font-size: 40px;
   }
 }
+
+
+/* Second pink cta */
+
+.second-cta {
+  display: flex;
+  justify-content: center;
+}
+
+.second-cta a {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.second-cta .btn-search {
+  text-decoration: none;
+  background-color: #f12b6b;
+  padding: 15px 20px;
+  color: white;
+  border-radius: 3px;
+}
+
+.second-cta a.btn-search {
+  width: 230px;
+  height: 50px;
+  margin-bottom: 40px;
+}
+
+
+@media only screen and (max-device-width: 600px) {
+  .second-cta {
+    padding-top: 42px;
+  }
+
+  .second-cta .btn-search {
+    border-radius: 3px;
+  }
+
+  .second-cta a.btn-search {
+/*  width: 200px;
+    height: 79px;*/
+    padding: 15px 130px;
+  }
+
+  .second-cta a {
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+  }
+
+  .second-cta a.btn-search {
+    width: 500px;
+    height: 130px;
+    margin-bottom: 40px;
+  }
+}
+
+
+
+
+
+
