@@ -96,26 +96,45 @@ body {
   .arrow {
     font-size: 98px;
   }
-
 }
 
 .flex-thirds {
   display: flex;
   justify-content: space-between;
   min-height: 100vh;
+  margin: 48px 30px 25px 30px;
+}
+
+.flex-thirds .col {
+  width: 32%;
 }
 
 * {
   box-sizing: border-box;
 }
 
-.flex-thirds body {
-  padding: 20px;
-}
-.flex-grid {
-  margin: 0 0 20px 0;
-}
 .col {
-  background: #bbbdbf;
+  background: #f6f6f6;
   padding: 20px;
 }
+
+.col header {
+  padding-top: 15px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bolder;
+  color: #f12b6b;
+}
+
+.col p {
+  padding-top: 10px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+
+
+
+
+
