@@ -105,7 +105,7 @@ body {
 .flex-thirds {
   display: flex;
   justify-content: space-between;
-  min-height: 100vh;
+  min-height: 50vh;
   margin: 48px 30px 25px 30px;
 }
 
@@ -140,6 +140,8 @@ body {
     display: block;
     margin: 0;
     width: 100%;
+    max-height: 45vh;
+    overflow: scroll;
   }
 
   .flex-thirds .col {
@@ -178,6 +180,14 @@ body {
     font-size: 25px;
     text-align: justify;
     line-height: 1.5;
+  }
+
+  .col header {
+    font-size: 29px;
+    padding-top: 15px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+    color: #f12b6b;
   }
 }
 
