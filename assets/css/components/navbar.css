@@ -1,39 +1,24 @@
-/* The navigation bar */
-.navbar {
-  overflow: hidden;
+/*
+#navbar {
   background-color: transparent;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  width: 100%; /* Full width */
-  height: 87px;
+  color: #fff;
+  padding: 10px;
+ Without the four declarations below (position, width, box-sizing, top), then hero area and navbar are at the top.  With them, there is a white bar on CodePen. On my site that top white bar is not there.
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  top 0;
 }
 
-.navbar img {
-  height: 45px;
-  width: auto;
-  padding-left: 3px;
-  padding-top: 3px;
-}
+#navbar-flexbox {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}*/
+/*
+body { padding-top: 50px; }
+*/
 
-.navbar-right {
-  float: right;
-}
-/* Links inside the navbar */
-.navbar a {
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-/* Change background on mouse-over */
-.navbar a:hover {
-  background: #ddd;
-  color: black;
-}
-
-/* Main content */
-.main {
-  margin-top: 30px; /* Add a top margin to avoid content overlay */
+.navbar-fixed-top {
+    position: fixed !important;
 }
