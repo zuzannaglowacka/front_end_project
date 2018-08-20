@@ -32,8 +32,9 @@
 #nav-item-1, #nav-item-2 {
   margin: 5px 34px;
   font-family: 'Raleway', sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   padding-top: 20px;
+  color: #dc426c;
 }
 
 h1 {
@@ -53,5 +54,22 @@ h1 {
   line-height: 5;
 }
 
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width: 1024px) {
+  .web-logo {
+    width: 316px;
+    height: 50px;
+    margin-left: 34px;
+    margin-top: 15px;
+  }
 
+  #nav-item-1, #nav-item-2 {
+    margin: 5px 34px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 33px;
+    padding-top: 20px;
+    color: #dc426c;
+  }
+
+}
 
