@@ -52,9 +52,31 @@ h1 {
   line-height: 5;
 }
 
-a {
+.right-nav a {
   text-decoration: none;
 }
+
+.hamburger {
+  display: none;
+  color: black;
+}
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+
+  #nav-item-1, #nav-item-2 {
+    display: none;
+  }
+
+  .hamburger {
+    float: right;
+    display: block;
+    margin-right: 34px;
+    font-size: 34px;
+  }
+}
+
 
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width: 1024px) {
