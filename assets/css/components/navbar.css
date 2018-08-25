@@ -5,8 +5,17 @@
   width: 100%;
   box-sizing: border-box;
   margin-top: 2%;
+  padding: 6px 0px 4px 0px;
   top 0;
 }
+
+/* 1. class for white navbar */
+#navbar.white {
+  background-color: white;
+  transition: all ease .5s;
+  opacity: 0.9;
+}
+
 
 #navbar-flexbox {
   display: flex;
