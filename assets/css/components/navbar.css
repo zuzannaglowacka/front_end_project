@@ -4,8 +4,7 @@
   position: fixed;
   width: 100%;
   box-sizing: border-box;
-  margin-top: 2%;
-  padding: 6px 0px 4px 0px;
+  padding: 2% 0 1% 0;
   top 0;
 }
 
@@ -40,9 +39,9 @@
   margin: 0px 34px;
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
-  padding-top: 15px;
   color: #dc426c;
   opacity: 1 !important;
+  padding-top: 12%;
 }
 
 h1 {
