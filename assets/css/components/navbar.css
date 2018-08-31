@@ -5,13 +5,13 @@
   width: 100%;
   box-sizing: border-box;
   padding: 2% 0 1% 0;
-  top 0;
   z-index: 1;
+  top 0;
 }
 
 /* 1. class for white navbar */
 #navbar.white {
-  background-color: rgb(235, 240, 245);
+  background-color: rgb(234, 240, 245);
   transition: all ease .5s;
 }
 
