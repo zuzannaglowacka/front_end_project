@@ -68,7 +68,7 @@ body {
   font-size: 45px;
 }
 
-/* If the screen size is 600px wide or less, set the font-size of <div> to 25px */
+
 @media only screen and (max-device-width: 600px) {
   .banner-content h1 {
     font-size: 65px;
@@ -136,6 +136,17 @@ body {
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+
+  .drop-down-box {
+   height: 250px;
+   width: 250px;
+   background-color: rgb(234, 240, 245);
+   position: fixed;
+   align-self: flex-end;
+   top: 72.39px;
+   z-index: 1;
+  }
+
   .flex-thirds {
     display: block;
     margin: 0;
