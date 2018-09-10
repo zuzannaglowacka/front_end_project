@@ -84,6 +84,9 @@ h1 {
     display: block;
     margin-right: 34px;
     font-size: 34px;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
   }
 
 /*  .dropdown {
