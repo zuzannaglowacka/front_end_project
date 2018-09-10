@@ -67,11 +67,7 @@ h1 {
 
 .hamburger {
   display: none;
-  color: black;
-}
-
-.dropdown-content {
-  display: none;
+  cursor: pointer;
 }
 
 
