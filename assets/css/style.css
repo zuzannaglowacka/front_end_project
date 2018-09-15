@@ -151,7 +151,7 @@ body {
    height: 250px;
    width: 250px;
    background-color: rgb(234, 240, 245);
-   position: fixed;
+   position: absolute;
    /*align-self: flex-end;*/
    right: 0px;
    top: 72.39px;
