@@ -119,10 +119,7 @@
         }
 
         function ease(t, b, c, d) {
-          t /= d/2;
-          if (t < 1) return c/2*t*t*t*t + b;
-          t -= 2;
-          return -c/2 * (t*t*t*t - 2) + b;
+          return -c * Math.cos(t/d * (Math.PI/2)) + c + b;
         }
 
         requestAnimationFrame(animation);
@@ -131,7 +128,7 @@
       var arrow = document.querySelector('.arrow');
 
       arrow.addEventListener('click', function() {
-        smoothScroll('.flex-thirds', 2000);
+        smoothScroll('.flex-thirds', 1500);
       });
 
       console.log('hello');
