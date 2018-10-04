@@ -69,10 +69,33 @@
           <p>An architect is a person who plans, designs, and reviews the construction of buildings. To practice architecture means to provide services in connection with the design of buildings and the space within the site surrounding the buildings, that have as their principal purpose human occupancy or use. Etymologically, architect derives from the Latin architectus, which derives from the Greek (arkhi-, chief + tekton, builder), i.e., chief builder. Professionally, an architect's decisions affect public safety, and thus an architect must undergo specialized training consisting of advanced education and a practicum (or internship) for practical experience to earn a license to practice architecture. Practical, technical, and academic requirements for becoming an architect vary by jurisdiction.</p>
       </div>
     </div>
+
+    <h1 id="projects">Projects</h1>
+      <ul id="grid">
+        <div class="project">
+          <li><a href="/project1">Barbican</a></li>
+          <p class="project-description">A cool project because I'm cool.</p>
+        </div>
+        <div class="project">
+          <li><a href="/project2">Shard</a></li>
+          <p class="project-description">A fun project because I'm fun.</p>
+        </div>
+        <div class="project">
+          <li><a href="/project3">Stadium</a></li>
+          <p class="project-description">A fun project because I'm fun.</p>
+        </div>
+        <div class="project">
+          <li><a href="/project4">Park</a></li>
+          <p class="project-description">A fun project because I'm fun.</p>
+        </div>
+      </ul>
+
     <div class="second-cta">
         <a href="#" class="btn-search">Order a project</a>
     </div>
+
     <script>
+
       $(document).ready(function() {
         $(window).scroll(function() {
           if($(document).scrollTop() > 70) {
@@ -131,9 +154,31 @@
         smoothScroll('.flex-thirds', 1500);
       });
 
+
+      function projectFilter(projects, grid) {
+        // create and add the filter form to the header
+        var form = $("<form>").attr({"class":"filterform","action":"#"});
+          input = $("<input>").attr({"class":"filterinput","type":"text"});
+
+        $(form).append(input).appendTo(projects);
+
+        $(input).change( function () {
+          var filter = $(this).val();
+          if (filter) {
+            $(list).find("a:not(:contains(" + filter + "))").parent().slideUp();
+            $(list).find("a:contains(" + filter + ")").parent().slideDown();
+          } else {
+            $(list).find("li").slideDown();
+          }
+        });
+        // jQuery.expr[':'].Contains = function(a,i,m){
+        //   return (a.textContent || a.innerText || "").toUpperCase().indexOf(m[3].toUpperCase())>=0;
+        // };
+      }
       console.log('hello');
 
     </script>
+
   </body>
 </html>
 
