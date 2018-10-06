@@ -30,8 +30,31 @@ body {
   display: none;
 }
 
+/* Projects section styling */
 
+.projects-search {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 50px;
+}
 
+.projects-search ul {
+  position: relative;
+  margin: 0 auto;
+  right: 16px;
+}
+
+ul li a {
+  text-decoration: none !important;
+  color: black;
+}
+
+.projects-search h1 {
+  line-height: 1.5 !important;
+}
 
 @import url("//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
 
@@ -75,6 +98,38 @@ body {
 }
 
 
+.flex-thirds {
+  display: flex;
+  justify-content: space-between;
+  min-height: 50vh;
+  margin: 48px 30px 50px 30px;
+}
+
+.flex-thirds .col {
+  width: 32%;
+  background: #f6f6f6;
+  padding: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.col header {
+  padding-top: 15px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bolder;
+  color: #f12b6b;
+}
+
+.col p {
+  padding-top: 10px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  text-align: justify;
+  line-height: 1.5;
+}
+
 @media only screen and (max-device-width: 600px) {
   .banner-content h1 {
     font-size: 65px;
@@ -106,38 +161,6 @@ body {
   .banner {
     margin-bottom: 35px;
   }
-}
-
-.flex-thirds {
-  display: flex;
-  justify-content: space-between;
-  min-height: 50vh;
-  margin: 48px 30px 25px 30px;
-}
-
-.flex-thirds .col {
-  width: 32%;
-  background: #f6f6f6;
-  padding: 20px;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.col header {
-  padding-top: 15px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: bolder;
-  color: #f12b6b;
-}
-
-.col p {
-  padding-top: 10px;
-  font-family: 'Raleway', sans-serif;
-  font-size: 16px;
-  text-align: justify;
-  line-height: 1.5;
 }
 
 
