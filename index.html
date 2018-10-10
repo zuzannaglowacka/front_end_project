@@ -47,7 +47,7 @@
       <!-- Search project form -->
       <div class="search-input">
         <div class="search">
-          <!-- <span class="fa fa-search"></span> -->
+          <span class="fa fa-search"></span>
           <form class="filterform" action="#">
             <input type="search" placeholder="Search for a project" class="filterinput">
           </form>
@@ -149,6 +149,8 @@
 
     <script>
 
+      //jQuery code for the navbar colour change on scroll
+
       $(document).ready(function() {
         $(window).scroll(function() {
           if($(document).scrollTop() > 70) {
@@ -232,8 +234,7 @@
     // });
 
 
-
-
+      //Vanilla JS code for the drop-down-box menu appearing on mobile only
 
       function myFunction() {
 
@@ -253,6 +254,8 @@
           }
         }
       }
+
+      //Vanilla JS code for the smooth scroll effect for the arrow icon
 
       function smoothScroll(target, duration) {
         var target = document.querySelector(target);
