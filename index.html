@@ -178,6 +178,8 @@
 
           // $(form).append(input).appendTo('#header');
 
+         var input = "<input>";
+
           $('input')
             .change(function() {
               var filter = $(this).val();
@@ -283,6 +285,37 @@
 
       arrow.addEventListener('click', function() {
         smoothScroll('.flex-thirds', 1500);
+      });
+
+
+      //Vanilla JS code for the smooth scroll effect for the search button in projects section
+
+      function smoothScroll(target, duration) {
+        var target = document.querySelector(target);
+        var targetPosition = target.getBoundingClientRect().top;
+        var startPosition = window.pageYOffset;
+        var distance = targetPosition - startPosition;
+        var startTime = null;
+
+        function animation(currentTime) {
+          if(startTime === null) startTime = currentTime;
+          var timeElapsed = currentTime - startTime;
+          var run = ease(timeElapsed, startPosition, distance, duration);
+          window.scrollTo(0, run);
+          if(timeElapsed < duration) requestAnimationFrame(animation);
+        }
+
+        function ease(t, b, c, d) {
+          return -c * Math.cos(t/d * (Math.PI/2)) + c + b;
+        }
+
+        requestAnimationFrame(animation);
+      }
+
+      var button = document.querySelector('.btn-search');
+
+      button.addEventListener('click', function() {
+        smoothScroll('.projects-search', 1500);
       });
 
     </script>
