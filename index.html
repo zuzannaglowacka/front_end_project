@@ -96,47 +96,47 @@
             <!--  <p class="project-description">A fun project because I'm fun.</p> -->
           </div>
           <div class="project">
-            <li><a href="/project4">Private Houses</a></li>
+            <li><a href="/project5">Private Houses</a></li>
            <!--  <p class="project-description">A fun project because I'm fun.</p> -->
           </div>
           <div class="project">
-            <li><a href="/project4">Chester Terrace</a></li>
+            <li><a href="/project6">Chester Terrace</a></li>
            <!--  <p class="project-description">A fun project because I'm fun.</p> -->
           </div>
           <div class="project">
-            <li><a href="/project4">Studio Flats</a></li>
+            <li><a href="/project7">Studio Flats</a></li>
            <!--  <p class="project-description">A fun project because I'm fun.</p> -->
           </div>
           <div class="project">
-            <li><a href="/project4">Modern Houses</a></li>
+            <li><a href="/project8">Modern Houses</a></li>
            <!--  <p class="project-description">A fun project because I'm fun.</p> -->
           </div>
           <div class="project">
-            <li><a href="/project4">Leisure Centres</a></li>
+            <li><a href="/project9">Leisure Centres</a></li>
            <!--  <p class="project-description">A fun project because I'm fun.</p> -->
           </div>
           <div class="project">
-            <li><a href="/project4">Schools</a></li>
+            <li><a href="/project10">Schools</a></li>
            <!--  <p class="project-description">A fun project because I'm fun.</p> -->
           </div>
           <div class="project">
-            <li><a href="/project4">Hospitals</a></li>
+            <li><a href="/project11">Hospitals</a></li>
            <!--  <p class="project-description">A fun project because I'm fun.</p> -->
           </div>
           <div class="project">
-            <li><a href="/project4">Bathrooms</a></li>
+            <li><a href="/project12">Bathrooms</a></li>
            <!--  <p class="project-description">A fun project because I'm fun.</p> -->
           </div>
           <div class="project">
-            <li><a href="/project4">Museums</a></li>
+            <li><a href="/project13">Museums</a></li>
            <!--  <p class="project-description">A fun project because I'm fun.</p> -->
           </div>
           <div class="project">
-            <li><a href="/project4">Airports</a></li>
+            <li><a href="/project14">Airports</a></li>
            <!--  <p class="project-description">A fun project because I'm fun.</p> -->
           </div>
           <div class="project">
-            <li><a href="/project4">Laboratories</a></li>
+            <li><a href="/project15">Laboratories</a></li>
            <!--  <p class="project-description">A fun project because I'm fun.</p> -->
           </div>
 
@@ -164,6 +164,7 @@
 
       //jQuery code for the simple list filter...
 
+
       $(document).ready(function() {
         //CASE-INsensitive
         jQuery.expr[':'].Contains = function(a,i,m) {
@@ -185,15 +186,13 @@
               var filter = $(this).val();
               if (filter) {
 
-                $('#list').find("li:not(:Contains(" + filter + "))").slideUp();
                 $('#list').find("li:Contains(" + filter + ")").slideDown();
+                $('#list').find("li:not(:Contains(" + filter + "))").slideUp();
 
               } else {
-
                 $('#list').find("li").slideDown();
-
               }
-              return false;
+              // return false;
             })
 
             .keyup(function() {
@@ -222,18 +221,6 @@
         $("#filter-list li.active").last().css('border-bottom', '1px solid grey');
 
       });
-
-
-    //  /* no form submit by pressing ENTER button */
-    //   $(input).keypress(function(event) {
-
-    //    http://www.cambiaresearch.com/articles/15/javascript-key-codes
-
-    //   if (event.keyCode == 10 || event.keyCode == 13){
-    //     event.preventDefault();
-    //   }
-
-    // });
 
 
       //Vanilla JS code for the drop-down-box menu appearing on mobile only
