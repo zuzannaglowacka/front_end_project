@@ -44,10 +44,13 @@
       <div class="banner-content">
         <h1>Layla's Architecture</h1>
       </div>
+      <!-- Search project form -->
       <div class="search-input">
         <div class="search">
-          <span class="fa fa-search"></span>
-          <input placeholder="Search for a project">
+          <!-- <span class="fa fa-search"></span> -->
+          <form class="filterform" action="#">
+            <input type="search" placeholder="Search for a project" class="filterinput">
+          </form>
         </div>
       </div>
       <div class="pink-button">
@@ -157,7 +160,7 @@
         });
       });
 
-      //jQuery code for a simple list filter...
+      //jQuery code for the simple list filter...
 
       $(document).ready(function() {
         //CASE-INsensitive
@@ -167,13 +170,13 @@
 
         function listFilter(header, list) {
         // create and add the filter form to the header
-          var form = $("<form>").attr({"class":"filterform","action":"#"}),
-          input = $("<input>").attr({"class": "filterinput","type":"search",
-          "placeholder": 'Search...'});
+          // var form = $("<form>").attr({"class":"filterform","action":"#"}),
+          // input = $("<input>").attr({"class": "filterinput","type":"search",
+          // "placeholder": 'Search...'});
 
-          $(form).append(input).appendTo('#header');
+          // $(form).append(input).appendTo('#header');
 
-          $(input)
+          $('input')
             .change(function() {
               var filter = $(this).val();
               if (filter) {
@@ -202,16 +205,6 @@
             }
           });
         }
-
-          // $(input).change(function() {
-          //   var filter = $(this).val();
-          //   if (filter) {
-          //     $(list).find("a:not(:contains(" + filter + "))").parent().slideUp();
-          //     $(list).find("a:contains(" + filter + ")").parent().slideDown();
-          //   } else {
-          //     $(list).find("li").slideDown();
-          //   }
-          // });
 
         $(document).ready(function() {
           listFilter($("#filter-header"), $("#filter-list"));
