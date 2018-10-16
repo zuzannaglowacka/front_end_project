@@ -76,6 +76,10 @@
       <h1 id="header">Projects</h1>
         <ul id="list">
           <div class="project">
+            <li><p id="result"></p>We found X project(s).</li>
+           <!--  <p class="project-description">A fun project because I'm fun.</p> -->
+          </div>
+          <div class="project">
             <li><a href="/project1">Barbican</a></li>
             <!-- <p class="project-description">A cool project because I'm cool.</p> -->
           </div>
@@ -139,10 +143,12 @@
             <li><a href="/project15">Laboratories</a></li>
            <!--  <p class="project-description">A fun project because I'm fun.</p> -->
           </div>
-
+          <div class="project">
+            <li><p id="noresult">Sorry, we have found no results matching your search. Please try again.</p></li>
+           <!--  <p class="project-description">A fun project because I'm fun.</p> -->
+          </div>
         </ul>
       </div>
-
     <div class="second-cta">
         <a href="#" class="btn-search">Order a project</a>
     </div>
@@ -162,8 +168,8 @@
         });
       });
 
-      //jQuery code for the simple list filter...
 
+      //jQuery code for the list filter...
 
       $(document).ready(function() {
         //CASE-INsensitive
@@ -171,13 +177,14 @@
         return (a.textContent || a.innerText || "").toUpperCase().indexOf(m[3].toUpperCase())>=0;
         };
 
-        function listFilter(header, list) {
-        // create and add the filter form to the header
-          // var form = $("<form>").attr({"class":"filterform","action":"#"}),
-          // input = $("<input>").attr({"class": "filterinput","type":"search",
-          // "placeholder": 'Search...'});
+        // $('#list').children().size()
 
-          // $(form).append(input).appendTo('#header');
+        var $noresult = $('#noresult');
+        var $result = $('#result');
+
+        $noresult.hide();
+
+        function listFilter(header, list) {
 
          var input = "<input>";
 
@@ -186,8 +193,8 @@
               var filter = $(this).val();
               if (filter) {
 
-                $('#list').find("li:Contains(" + filter + ")").slideDown();
-                $('#list').find("li:not(:Contains(" + filter + "))").slideUp();
+                $('#list').find("li:Contains(" + filter + ")").slideDown(); //Display the matched elements with a sliding motion.
+                $('#list').find("li:not(:Contains(" + filter + "))").slideUp(); //Hide the matched elements with a sliding motion.
 
               } else {
                 $('#list').find("li").slideDown();
