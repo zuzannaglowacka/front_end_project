@@ -74,6 +74,7 @@
     </div>
     <div class="projects-search">
       <h1 id="header">Projects</h1>
+        <div id="results">Results</div>
         <ul id="list">
           <div class="project">
             <li><p id="result"></p>We found X project(s).</li>
@@ -143,10 +144,6 @@
             <li><a href="/project15">Laboratories</a></li>
            <!--  <p class="project-description">A fun project because I'm fun.</p> -->
           </div>
-          <div class="project">
-            <li><p id="noresult">Sorry, we have found no results matching your search. Please try again.</p></li>
-           <!--  <p class="project-description">A fun project because I'm fun.</p> -->
-          </div>
         </ul>
       </div>
     <div class="second-cta">
@@ -177,29 +174,43 @@
         return (a.textContent || a.innerText || "").toUpperCase().indexOf(m[3].toUpperCase())>=0;
         };
 
-        // $('#list').children().size()
-
-        var $noresult = $('#noresult');
-        var $result = $('#result');
-
-        $noresult.hide();
 
         function listFilter(header, list) {
 
-         var input = "<input>";
+          var input = "<input>";
 
           $('input')
             .change(function() {
-              var filter = $(this).val();
+              var filter = $(this).val(); // get the value of the input, which we filter on
+              var $messageelement = $('#results');
+              console.log($messageelement);
               if (filter) {
 
-                $('#list').find("li:Contains(" + filter + ")").slideDown(); //Display the matched elements with a sliding motion.
-                $('#list').find("li:not(:Contains(" + filter + "))").slideUp(); //Hide the matched elements with a sliding motion.
+                var found = $('#list').find("li:Contains(" + filter + ")").slideDown(); //Display the matched elements with a sliding motion.
+                $('#list').find("li:not(:Contains(" + filter + "))").slideUp();
 
-              } else {
-                $('#list').find("li").slideDown();
+                console.log(found);
+
+                if (found.length == 0) {
+                  $messageelement.text("Sorry we have found no results");
+                  $messageelement.show();
+                }
+
+                else if (found.length == 1) {
+                  $messageelement.text("We found " + found.length + " project.");
+                  $messageelement.show();
+                }
+
+                else {
+                  $messageelement.text("We found " + found.length + " projects.");
+                  $messageelement.show();
+                }
               }
-              // return false;
+              else {
+                $('#list').find("li").slideDown();
+                $messageelement.hide(); //just checking if $(this).val(); has any value, and if not, just showing everything:
+              }
+
             })
 
             .keyup(function() {
@@ -228,6 +239,8 @@
         $("#filter-list li.active").last().css('border-bottom', '1px solid grey');
 
       });
+
+
 
 
       //Vanilla JS code for the drop-down-box menu appearing on mobile only
