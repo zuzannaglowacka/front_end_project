@@ -188,17 +188,17 @@
                 console.log(found);
 
                 if (found.length == 0) {
-                  $messageelement.text("Sorry we have found no results");
+                  $messageelement.html("<h2>No results matching your search were found. Please try again.</h2>");
                   $messageelement.show();
                 }
 
                 else if (found.length == 1) {
-                  $messageelement.text("We found " + found.length + " project.");
+                  $messageelement.html("<h2>We found " + found.length + " project matching your search!</h2>");
                   $messageelement.show();
                 }
 
                 else {
-                  $messageelement.text("We found " + found.length + " projects.");
+                  $messageelement.html("<h2>We found " + found.length + " projects matching your search!</h2>");
                   $messageelement.show();
                 }
               }
