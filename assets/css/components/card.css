@@ -1,5 +1,5 @@
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  .cards {
+  .container {
     display: block;
     /*padding-top: 70px;*/
   }
@@ -7,6 +7,27 @@
 
 
 @media only screen and (min-device-width: 768px) {
+
+  .container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+  }
+
+  .cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding-top: 40px;
+  }
+
+  .project {
+    flex: 0 0 16%;
+    padding-bottom: 20px;
+  }
 
   .card {
     height: 300px;
@@ -16,17 +37,12 @@
     padding-top: 5px;
   }
 
-  .cards {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    padding-top: 40px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 20px;
+
+
+  .card-description {
+    font-size: 18px;
+    margin-top: 8px;
   }
+
 }
 
