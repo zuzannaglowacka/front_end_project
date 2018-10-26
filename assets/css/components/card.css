@@ -25,13 +25,6 @@ h2 {
   margin-bottom: 35px;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  .container {
-    display: block;
-    /*padding-top: 70px;*/
-  }
-}
-
 
 @media only screen and (min-device-width: 768px) {
 
@@ -47,6 +40,7 @@ h2 {
     justify-content: space-around;
     flex-wrap: wrap;
     align-items: flex-start;
+    align-content: center;
     padding-top: 35px;
   }
 
@@ -70,9 +64,16 @@ h2 {
     align-items: center;
   }
 
-  ul li a {
-    /*align-self: center;*/
+  .card:hover {
+    opacity: 0.5;
+    background-color: white;
+    transition: 0.3s;
   }
-
 }
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .container {
+    display: block;
+    /*padding-top: 70px;*/
+  }
+}

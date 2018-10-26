@@ -34,13 +34,13 @@ body {
 /* Projects section styling */
 
 .projects-search {
-  display: flex;
   align-items: center;
   text-align: center;
   flex-direction: column;
   justify-content: center;
   margin-bottom: 50px;
   min-height: 55vh;
+  margin-top: 5vh;
 }
 
 .projects-search ul {
