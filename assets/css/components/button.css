@@ -44,82 +44,96 @@
 
 /* Second pink cta */
 
-.second-cta {
-  display: flex;
-  justify-content: center;
-}
 
-.second-cta a {
-  font-family: 'Raleway', sans-serif;
-  font-size: 16px;
-  font-weight: bolder;
-  text-align: center;
-}
-
-.second-cta .btn-search {
-  text-decoration: none;
-  background-color: #f12b6b;
-  padding: 15px 20px;
-  color: white;
-  border-radius: 3px;
-}
-
-.second-cta a.btn-search {
-  width: 230px;
-  height: 50px;
-  margin-bottom: 40px;
-}
-
-
-@media only screen and (max-device-width: 600px) {
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
   .second-cta {
     padding-top: 42px;
+    display: flex;
+    justify-content: center;
   }
 
-  .second-cta .btn-search {
+  .second-cta .btn-project {
+    text-decoration: none;
+    background-color: #f12b6b;
+    padding: 15px 20px;
+    color: white;
     border-radius: 3px;
   }
 
-  .second-cta a.btn-search {
+  .second-cta a.btn-project {
 /*  width: 200px;
     height: 79px;*/
-    padding: 15px 130px;
-  }
-
-  .second-cta a {
-    font-family: 'Raleway', sans-serif;
-    font-size: 40px;
-  }
-
-  .second-cta a.btn-search {
-    width: 500px;
+    padding: 35px 130px;
+    width: 581px;
     height: 130px;
     margin-bottom: 40px;
   }
+
+  .second-cta a {
+    font-family: 'Raleway', sans-serif;
+    font-size: 46px;
+    font-weight: bolder;
+    text-align: center;
+  }
 }
 
-@media only screen and (max-device-width: 1024px) {
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
   .second-cta {
+    display: flex;
+    justify-content: center;
     padding-top: 42px;
   }
 
-  .second-cta .btn-search {
+  .second-cta .btn-project {
+    text-decoration: none;
+    background-color: #f12b6b;
+    padding: 15px 20px;
+    color: white;
     border-radius: 3px;
-  }
-
-  .second-cta a.btn-search {
-    padding: 24px 83px;
   }
 
   .second-cta a {
     font-family: 'Raleway', sans-serif;
     font-size: 40px;
+    font-weight: bolder;
+    text-align: center;
   }
 
-  .second-cta a.btn-search {
+  .second-cta a.btn-project {
     width: 455px;
     height: 104px;
     margin-bottom: 40px;
+    padding: 24px 83px;
   }
 }
 
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+  .second-cta {
+    display: flex;
+    justify-content: center;
+  }
+
+  .second-cta a {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: bolder;
+    text-align: center;
+  }
+
+  .second-cta .btn-project {
+    text-decoration: none;
+    background-color: #f12b6b;
+    padding: 15px 20px;
+    color: white;
+    border-radius: 3px;
+  }
+
+  .second-cta a.btn-project {
+    width: 230px;
+    height: 50px;
+    margin-bottom: 40px;
+  }
+}
