@@ -254,11 +254,12 @@
             .change(function() {
               var filter = $(this).val(); // get the value of the input, which we filter on
               var $messageelement = $('#results');
-              console.log($messageelement);
+              // console.log($messageelement);
               if (filter) {
 
                 var found = $('#list').find("li:Contains(" + filter + ")").slideDown(); //Display the matched elements with a sliding motion.
-                $('#list').find("li:not(:Contains(" + filter + "))").slideUp();
+                $('#list').find("li:not(:Contains(" + filter + "))").slideUp().addClass("hidden");
+
 
                 console.log(found);
 
