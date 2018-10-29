@@ -88,24 +88,20 @@ h2 {
     font-size: 5em;
     color: #dc426c;
     text-align: center;
-    margin-bottom: 8vh;
 }
 
   .card {
     min-height: 1000px;
-      width: 90%;
+    width: 90%;
     margin: 0 auto;
     background-size: cover;
     background-repeat: no-repeat;
-    margin-bottom: 5vh;
   }
 
   .card-description {
-    position: relative;
-    bottom: 67vh;
     font-size: 44px;
-    margin-top: 4vh;
-    margin-bottom: 1vh;
     text-align: center;
+    margin-bottom: 6vh;
+    margin-top: 1.6vh;
   }
 }
