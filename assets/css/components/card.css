@@ -44,15 +44,15 @@ h2 {
     padding-top: 35px;
   }
 
-  .project {
+/*  .project {
     flex: 0 0 16%;
     padding-bottom: 20px;
-  }
-
+  }*/
+/*
   .hidden {
     display: none !important;
     flex: 0 0 0% !important;
-  }
+  }*/
 
   .card {
     height: 300px;
